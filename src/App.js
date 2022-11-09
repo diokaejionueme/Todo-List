@@ -21,8 +21,6 @@ function App(){
     })
   }, [input])
 
-  
-
   const addTodo = (e) => {
     e.preventDefault();
     addDoc(collection(db, 'todos'),{
@@ -35,7 +33,7 @@ function App(){
   return (
 
     <div className="app">
-      <h1 class="form-header">TODO App</h1>
+      <h1 class="form-header">My Todo List</h1>
       <form className="form-ctrl">
         <FormControl>
           <InputLabel>Write a TODO</InputLabel>
